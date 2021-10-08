@@ -31,7 +31,7 @@ chrome-profiler-events*.json
 .history/*
 
 # misc
-/.sass-cache
+/.less-cache
 /connect.lock
 /coverage
 /libpeerconnection.log
