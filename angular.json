@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "selligent-interview-shell": {
+    "selligent-interview-challenge": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/selligent-interview-shell",
+            "outputPath": "dist/selligent-interview-challenge",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "selligent-interview-shell:build:production"
+              "browserTarget": "selligent-interview-challenge:build:production"
             },
             "development": {
-              "browserTarget": "selligent-interview-shell:build:development"
+              "browserTarget": "selligent-interview-challenge:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,30 +84,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "selligent-interview-shell:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "less",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.less"
-            ],
-            "scripts": []
+            "browserTarget": "selligent-interview-challenge:build"
           }
         }
       }
     }
   },
-  "defaultProject": "selligent-interview-shell"
+  "defaultProject": "selligent-interview-challenge"
 }

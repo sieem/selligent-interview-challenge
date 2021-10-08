@@ -46,7 +46,7 @@ import { PhotosResponse } from 'src/app/facades/photos.facade.util';
         </td>
       </tr>
     </table>
-    <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+    <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
     </mat-paginator>
   `,
   styles: [`
